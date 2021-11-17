@@ -32,8 +32,8 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
           env: # Add environment variables here
-            REACT_APP_STORAGESASTOKEN: ${{secrets.REACT_APP_STORAGESASTOKEN}}
-            REACT_APP_STORAGERESOURCENAME: ${{secrets.REACT_APP_STORAGERESOURCENAME}}
+            REACT_APP_STORAGESASTOKEN: $sv=2020-08-04&ss=b&srt=sco&sp=rwdlactfx&se=2021-11-18T14:34:12Z&st=2021-11-17T14:34:12Z&spr=https&sig=LfkaDsPpzFdBFfT1cNSHVsoOilX6Zh37WcaldeHxjWo%3D
+            REACT_APP_STORAGERESOURCENAME: eoinCloud
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
