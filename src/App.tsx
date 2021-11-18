@@ -51,7 +51,7 @@ const App = (): JSX.Element => {
   // display file name and image
   const DisplayImagesFromContainer = () => (
     <div>
-      <h2>Container items</h2>
+      <h2>Uploaded files:</h2>
       <ul>
         {blobList.map((item) => {
           return (
@@ -72,7 +72,7 @@ const App = (): JSX.Element => {
     <div>
       <h1>Select a file to upload!</h1>
       {storageConfigured && !uploading && DisplayForm()}
-      {storageConfigured && uploading && <div>Uploading</div>}
+      {storageConfigured && uploading && DisplayImagesFromContainer() && <div>Uploading</div>}
       <hr />
       {storageConfigured && blobList.length > 0 && DisplayImagesFromContainer()}
       {!storageConfigured && <div>Storage is not configured.</div>}
