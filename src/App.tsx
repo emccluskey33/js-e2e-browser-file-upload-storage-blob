@@ -70,7 +70,7 @@ const App = (): JSX.Element => {
 
   return (
     <div>
-      <h1>Select a file to upload!</h1>
+      <h1>Please select a file to upload!</h1>
       {storageConfigured && !uploading && DisplayForm()}
       {storageConfigured && uploading && <div>Uploading</div>}
       <hr />
