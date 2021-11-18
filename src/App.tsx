@@ -71,8 +71,8 @@ const App = (): JSX.Element => {
   return (
     <div>
       <h1>Select a file to upload!</h1>
-      {storageConfigured && !uploading && DisplayForm()}
-      {storageConfigured && uploading && DisplayImagesFromContainer() && <div>Uploading</div>}
+      {storageConfigured && !uploading && DisplayForm() && DisplayImagesFromContainer()}
+      {storageConfigured && uploading && <div>Uploading</div>}
       <hr />
       {storageConfigured && blobList.length > 0 && DisplayImagesFromContainer()}
       {!storageConfigured && <div>Storage is not configured.</div>}
