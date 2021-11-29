@@ -1,10 +1,10 @@
 // ./src/App.tsx
 
 import React, { useState } from 'react';
-import Path from 'path';
-import uploadFileToBlob, { isStorageConfigured } from './azure-storage-blob';
+// import Path from 'path';
+// import uploadFileToBlob, { isStorageConfigured } from './azure-storage-blob';
 
-const storageConfigured = isStorageConfigured();
+// const storageConfigured = isStorageConfigured();
 
 const App = (): JSX.Element => {
   // // all blobs in container
